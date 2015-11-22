@@ -9,16 +9,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/edit_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"/>
+
     <Button
         android:id="@+id/botao_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buscar dados do WS" />
+        android:text="Buscar dados do WS"
+        android:layout_below="@+id/edit_buscar"/>
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/botao_buscar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/botao_buscar">
+        android:layout_below="@+id/imagem">
 
         <TextView
             android:id="@+id/text_resultado"
