@@ -18,7 +18,7 @@ import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String URL_CONTENT = "http://api.openweathermap.org/data/2.5/weather?q=sao%20paulo&appid=2de143494c0b295cca9337e1e96b00e0";
+    public static final String URL_CONTENT = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=sao%20paulo&appid=2de143494c0b295cca9337e1e96b00e0";
 
     private TextView textResultado;
     private Button botaoBuscar;
